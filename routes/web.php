@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FormularioController;
+use App\Http\Controllers\loginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +19,5 @@ Route::get('/formulario', [FormularioController::class, 'create'])->name('formul
 Route::post('/formulario/data', [FormularioController::class, 'store'])->name('formulario.store');
 Route::get('/nosotros', [FormularioController::class, 'nosotros'])->name('formulario.nosotros');
 Route::get('/servicios', [FormularioController::class, 'servicios'])->name('formulario.servicios');
+Route::get('/login',[loginController::class,'index'])->name('login.index');
 
