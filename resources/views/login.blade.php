@@ -11,16 +11,16 @@
     <form action="/login" method="post">
         <div class="flex flex-col items-center justify-center h-screen">
             <div class="w-full md:w-1/2 lg:w-1/3 mx-auto">
-                <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                    <h1 class="font-bold text-lg mb-4">Login</h1>
+                <div class="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
+                    <h1 class="font-bold text-center text-5xl mb-4">Barbería</h1>
                     <div class="mb-4"> 
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="username">
+                        <label class="block uppercase tracking-wide text-gray-700 text-md font-bold mb-2" for="username">
                             Username
                         </label>    
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="username" type="text" placeholder="Username">
                     </div>
                     <div class="mb-6">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="password">
+                        <label class="block uppercase tracking-wide text-gray-700 text-md font-bold mb-2" for="password">
                             Password
                         </label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="password" type="password" placeholder="Password">
