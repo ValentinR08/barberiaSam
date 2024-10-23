@@ -14,10 +14,17 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', [FormularioController::class, 'index'])->name('formulario.index');
-Route::get('/formulario', [FormularioController::class, 'create'])->name('formulario.create');
-Route::post('/formulario/data', [FormularioController::class, 'store'])->name('formulario.store');
-Route::get('/nosotros', [FormularioController::class, 'nosotros'])->name('formulario.nosotros');
-Route::get('/servicios', [FormularioController::class, 'servicios'])->name('formulario.servicios');
-Route::get('/login',[loginController::class,'index'])->name('login.index');
+Route::middleware('auth')->group(function () {
+    Route::get('/barberia', [FormularioController::class, 'index'])->name('formulario.index');
+    Route::get('/formulario', [FormularioController::class, 'create'])->name('formulario.create');
+    Route::post('/formulario/data', [FormularioController::class, 'store'])->name('formulario.store');
+    Route::get('/nosotros', [FormularioController::class, 'nosotros'])->name('formulario.nosotros');
+    Route::get('/servicios', [FormularioController::class, 'servicios'])->name('formulario.servicios');
+});
 
+
+Route::get('/',[loginController::class,'index'])->name('login.index');
+Route::post('/register',[loginController::class,'register'])->name('register.store');
+Route::get('/register',[loginController::class,'createUser'])->name('register.index');
+Route::post('/login/register',[loginController::class,'login'])->name('login.store');
+Route::post('/logout',[loginController::class,'logout'])->name('logout');

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <script></script>
     <title>Barberia</title>
 </head>
 <body>
@@ -17,6 +18,7 @@
                 <li><a href="{{route('formulario.nosotros')}}">Nosotros</a> </li>
                 <li><a href="{{route('formulario.servicios')}}">Servicios</a> </li> 
                 <li><a href="{{route('formulario.create')}}">Contactanos</a> </li>
+                <li><a href="{{route('logout')}}">cerrar sesion</a> </li>
             </ul>
         </nav>
     </header>
