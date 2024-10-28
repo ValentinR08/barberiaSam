@@ -52,7 +52,8 @@ class loginController extends Controller
         $user = User::create($datos);
         $user->password = Hash::make($datos['password']);
         $user->save();
-        return redirect('/login')->with('success', 'Usuario creado exitosamente');
+        auth()->login($user);
+        return redirect('/barberia')->with('success', 'Usuario creado exitosamente');
     }
 }
 
