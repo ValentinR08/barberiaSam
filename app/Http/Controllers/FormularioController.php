@@ -39,7 +39,7 @@ class FormularioController extends Controller
      */
     public function store(StoreformularioRequest $request)
     {
-        //
+        
         $formulario = new formulario;
         $formulario->nombre = $request->nombre;
         $formulario->apellido = $request->apellido;

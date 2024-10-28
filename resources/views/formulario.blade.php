@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/style2.css')}}">
     <title>Contacto</title>
 </head>
 <body class="bg-dark">
     <header
-        <div class="name ">
+        <div class="name">
             <img src="{{asset('img/barber5.png')}}" alt="" srcset="">
         </div>
         <nav>
@@ -23,10 +24,11 @@
             </ul>
         </nav>
     </header>
-    <div  class="cont-formulario">
-        <h2 class="mb-5">Contacto</h2>
-        <div id="mensaje" class="mensaje">
 
+    <div class="container">
+    <div class="cont-formulario bg-black.bg-gradient p-5 rounded-2">
+        <h2 class="">Contacto</h2>
+        <div id="mensaje" class="mensaje">
         </div>
         <form id="formulario" action="{{route('formulario.store')}}" method="POST">
             @csrf
@@ -53,7 +55,10 @@
             <button type="submit" id="boton"  class="btn btn-primary">Enviar</button>
         </form>
     </div>
+</div>
+
     <script src="{{asset('js/script.js')}}" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

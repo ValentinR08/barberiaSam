@@ -18,7 +18,7 @@
                 <li><a href="{{route('formulario.nosotros')}}">Nosotros</a> </li>
                 <li><a href="{{route('formulario.servicios')}}">Servicios</a> </li> 
                 <li><a href="{{route('formulario.create')}}">Contactanos</a> </li>
-                <li><a href="{{route('logout')}}">cerrar sesion</a> </li>
+                <li><a href="{{route('logout')}}">Cerrar Sesión</a> </li>
             </ul>
         </nav>
     </header>
