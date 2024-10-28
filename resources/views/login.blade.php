@@ -39,9 +39,9 @@
                     </div>
                     <div class="flex items-center justify-between">
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                            Login
+                            Log in
                         </button>
-                        <a href="/register" class="text-blue-500 hover:text-blue-800 text-sm">Register</a>
+                        <a href="/register" class="text-blue-500 hover:text-blue-800 text-sm">Registrarse</a>
                     </div>
                 </div>
             </div>
