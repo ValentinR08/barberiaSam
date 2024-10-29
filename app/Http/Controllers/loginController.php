@@ -22,7 +22,7 @@ class loginController extends Controller
         return view('login');
     }
     public function logout(){
-        auth()->logout();
+        auth()->logout();//Algo
         return redirect()->route('login.index');
     }
     public function login(Request $request){
