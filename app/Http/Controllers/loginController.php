@@ -39,7 +39,7 @@ class loginController extends Controller
         }
         
         return back()->withErrors([
-            'email' => 'no existe cuenta con ese email',
+            'email' => 'no existe cuenta con ese email o contraseña incorrecta',
         ])->onlyInput('email');
     }
     public function  createUser(){
