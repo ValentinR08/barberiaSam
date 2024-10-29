@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
+use function Laravel\Prompts\error;
+
 class loginController extends Controller
 {
     //
@@ -53,7 +55,8 @@ class loginController extends Controller
         $user->password = Hash::make($datos['password']);
         $user->save();
         auth()->login($user);
-        return redirect('/barberia')->with('success', 'Usuario creado exitosamente');
+        
+        return redirect('/barberia');
     }
 }
 

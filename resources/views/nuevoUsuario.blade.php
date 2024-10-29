@@ -18,14 +18,29 @@
                         <div class="mb-4">
                             <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nombre</label>
                             <input type="text" name="name" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Nombre">
+                            @error('name')
+                                <div class="bg-red-500 text-white p-2 rounded-md mb-4 mt-4">
+                                    {{ $message }}
+                                </div>            
+                            @enderror
                         </div>
                         <div class="mb-4">
                             <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
                             <input type="email" name="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Email">
+                            @error('email')
+                                <div class="bg-red-500 text-white p-2 rounded-md mb-4 mt-4">
+                                    {{ $message }}
+                                </div>            
+                            @enderror
                         </div>
                         <div class="mb-4">
                             <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Contraseña</label>
                             <input type="password" name="password" id="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Contraseña">
+                            @error('password')
+                                <div class="bg-red-500 text-white p-2 rounded-md mb-4 mt-4">
+                                    {{ $message }}
+                                </div>            
+                            @enderror
                         </div>
                         
                         <div class="mb-4">
