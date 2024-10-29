@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
-    
+<body class="">
+
     <form action="{{route('login.store')}}" method="post">
         @csrf
         <div class="flex flex-col items-center justify-center h-screen">
@@ -38,7 +38,7 @@
                         <input name="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="password" type="password" placeholder="Password">
                     </div>
                     <div class="flex items-center justify-between">
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                        <button class="animation-spin bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                             Log in
                         </button>
                         <a href="/register" class="text-blue-500 hover:text-blue-800 text-sm">Registrarse</a>
